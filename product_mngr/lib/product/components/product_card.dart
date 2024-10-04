@@ -38,6 +38,7 @@ class ProductCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
+                  // product.title,
                   TextFormatter.reduceTextLength(product.title, 30),
                   style: const TextStyle(
                       fontSize: 12, fontWeight: FontWeight.w500),
@@ -74,7 +75,13 @@ class ProductCard extends StatelessWidget {
                             )))
               ],
             ),
-          )
+          ),
+          // Flexible(
+          //   flex: 6,
+          //   child: Container(
+          //     color: Colors.red,
+          //   ),
+          // )
         ],
       ),
     );

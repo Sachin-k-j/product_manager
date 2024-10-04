@@ -42,7 +42,8 @@ class Product {
 
   factory Product.fromRawJson(String str) => Product.fromJson(json.decode(str));
 
-  factory Product.fromJson(Map<String, dynamic> json) => Product(id: json["id"],
+  factory Product.fromJson(Map<String, dynamic> json) => Product(
+        id: json["id"],
         title: json["title"],
         description: json["description"],
         price: json["price"],
